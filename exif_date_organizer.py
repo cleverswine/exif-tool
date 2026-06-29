@@ -35,6 +35,10 @@ DATE_PATTERNS = [
     re.compile(r"(?P<year>19\d{2}|20\d{2}|2026)(?P<month>0[1-9]|1[0-2])(?P<day>0[1-9]|[12][0-9]|3[01])"),
     # MM-DD-YYYY / MM.DD.YYYY / MM_DD_YYYY
     re.compile(r"(?P<month>0?[1-9]|1[0-2])[-_\. ](?P<day>0?[1-9]|[12][0-9]|3[01])[-_\. ](?P<year>19\d{2}|20\d{2}|2026)"),
+    # MM-DD-YY_
+    re.compile(r"(?P<month>0?[1-9]|1[0-2])-(?P<day>0?[1-9]|[12][0-9]|3[01])-(?P<year>\d{2})_"),
+    # space M-DD-YY_
+    re.compile(r" (?P<month>0?[1-9]|1[0-2])-(?P<day>0?[1-9]|[12][0-9]|3[01])-(?P<year>\d{2})_"),
     # YYYY-MM / YYYY_MM / YYYY.MM / YYYY MM
     re.compile(r"(?P<year>19\d{2}|20\d{2}|2026)[-_\. ](?P<month>0?[1-9]|1[0-2])"),
 ]
