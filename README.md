@@ -2,14 +2,7 @@
 
 `exif_date_organizer.py` is a Python utility for organizing photo and video files by date using embedded EXIF metadata and derived timestamps from filenames or directory paths.
 
-run notes:
-
-python3 exif_date_organizer.py --source /mnt/smb/cloud_backup/Archive/Larry/ --dest ~/Pictures_Organized --verbose
-
-python3 exif_date_organizer.py --source /mnt/smb/cloud_backup/Pictures/ --dest ~/Pictures_Organized --copy-unsupported --verbose
-
-python3 exif_date_organizer.py --source /mnt/smb/cloud_backup/Videos/ --dest ~/Pictures_Organized --copy-unsupported --verbose
-
+**"vibe coded" with Code and Copilot**
 
 ## Features
 
